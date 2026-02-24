@@ -328,7 +328,7 @@ def train_epoch(
             else:
                 torch.nn.utils.clip_grad_norm_(model.parameters(), max_grad_norm)
                 optimizer.step()
-
+                
             optimizer.zero_grad(set_to_none=True)
 
             # OneCycleLR should step AFTER optimizer step (per batch update)
