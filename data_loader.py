@@ -67,7 +67,7 @@ class BTCSequenceDataset(Dataset):
         future_returns = self.data.loc[end:end+self.target_horizon-1, self.target_column].values
         cum_return = np.sum(future_returns)
         # Classify: up (1) if cum_return > 0.0001, down (0) if < -0.0001, flat (2) otherwise
-        threshold = 0.002
+        threshold = config["return_threshold"]
         if cum_return > threshold:
             y = 0  # up
         elif cum_return < -threshold:
