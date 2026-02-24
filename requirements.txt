@@ -1,0 +1,7 @@
+pandas
+numpy
+requests
+python-binance
+google-cloud-storage
+torch
+pyarrow  # for parquet

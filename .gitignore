@@ -1,0 +1,16 @@
+# mac
+.DS_Store
+
+# python
+__pycache__/
+*.pyc
+
+# env
+venv/
+.env
+
+# data & artifacts
+data/
+checkpoints/
+*.parquet
+*.zip
