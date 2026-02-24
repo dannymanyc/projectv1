@@ -29,7 +29,7 @@ MODEL_CONFIG = {
     "num_heads": 8,
     "num_layers": 6,
     "dropout": 0.1,
-    "batch_size": 64,
+    "batch_size": 256,
     "learning_rate": 1e-4,
     "weight_decay": 1e-2,
     "num_epochs": 20,
